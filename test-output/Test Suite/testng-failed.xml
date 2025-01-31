@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="LoginTests(failed)">
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="testPasswordVisibilityToggle"/>
+          <include name="testPasswordMasking"/>
+          <include name="testPasswordResetEmailFormat"/>
+          <include name="initialize"/>
+          <include name="testPasswordResetWithRegisteredEmail"/>
+          <include name="tearDown"/>
+          <include name="testValidGoogleRegistration"/>
+          <include name="testBlankUsernameWithValidPassword"/>
+          <include name="testRegistrationWithExistingGoogleAccount"/>
+          <include name="testForgotPasswordLink"/>
+          <include name="testExpiredPasswordLogin"/>
+          <include name="testValidLogin"/>
+          <include name="testEmptyFieldsLogin"/>
+          <include name="testInvalidLogin"/>
+          <include name="testPasswordResetWithUnregisteredEmail"/>
+          <include name="testErrorMessageConsistency"/>
+          <include name="testCaseSensitivity"/>
+          <include name="testLoginWithRememberMe"/>
+          <include name="testBlankPasswordWithValidUsername"/>
+          <include name="setUp"/>
+          <include name="testSignUpLink"/>
+          <include name="testLongUsernamePassword"/>
+          <include name="testResetPassword"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+    </classes>
+  </test> <!-- LoginTests(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
