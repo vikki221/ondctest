@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Playwright Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 31, 2025 04:07:24 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jan 31, 2025 06:22:46 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +74,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testValidLogin</p>
             <p class="text-sm">
-              <span>4:07:49 pm</span> / <span>00:00:00:264</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:010</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testValidLogin</h5>
-<span class='badge badge-success'>01.31.2025 4:07:49 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:49 pm</span>
-<span class='badge badge-default'>00:00:00:264</span>
+<h5 class="test-status text-skip">testValidLogin</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:010</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -104,10 +104,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:49 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Login was unsuccessful or dashboard not visible! expected [true] but found [false]
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -115,25 +115,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testInvalidLogin</p>
             <p class="text-sm">
-              <span>4:07:49 pm</span> / <span>00:00:09:192</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:003</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testInvalidLogin</h5>
-<span class='badge badge-success'>01.31.2025 4:07:49 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:09:192</span>
+<h5 class="test-status text-skip">testInvalidLogin</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:003</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -145,28 +145,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError:Target page, context or browser has been closed
-Error
-    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\utils\stackTrace.js:50:17)
-    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\utils\manualPromise.js:91:52)
-    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\utils\manualPromise.js:84:17)
-    at FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:96:36)
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:361:39)
-}
-Call log:
--   - waiting for locator("//input[@id='password']")
--     - locator resolved to <input required="" id="password" value="admin" name="password" type="password" aria-invalid="false" class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"/>
--     - fill("invalidPassword")
--   - attempting fill action
--     - waiting for element to be visible, enabled and editable
--   - element was detached from the DOM, retrying
-
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -174,25 +156,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testEmptyFieldsLogin</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:009</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testEmptyFieldsLogin</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:009</span>
+<h5 class="test-status text-skip">testEmptyFieldsLogin</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -204,18 +186,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -223,25 +197,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="skip" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testBlankUsernameWithValidPassword</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:005</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testBlankUsernameWithValidPassword</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:005</span>
+<h5 class="test-status text-skip">testBlankUsernameWithValidPassword</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -253,18 +227,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -272,25 +238,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="5"
+        <li class="test-item"  status="skip" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testBlankPasswordWithValidUsername</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:009</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testBlankPasswordWithValidUsername</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:009</span>
+<h5 class="test-status text-skip">testBlankPasswordWithValidUsername</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -302,18 +268,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -321,25 +279,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="6"
+        <li class="test-item"  status="skip" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testPasswordMasking</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:006</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testPasswordMasking</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:006</span>
+<h5 class="test-status text-skip">testPasswordMasking</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -351,18 +309,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -370,25 +320,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="7"
+        <li class="test-item"  status="skip" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testLoginWithRememberMe</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:004</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testLoginWithRememberMe</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-skip">testLoginWithRememberMe</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -400,18 +350,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -419,25 +361,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="8"
+        <li class="test-item"  status="skip" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testLongUsernamePassword</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:004</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testLongUsernamePassword</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-skip">testLongUsernamePassword</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -449,18 +391,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -468,25 +402,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="9"
+        <li class="test-item"  status="skip" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testCaseSensitivity</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:004</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCaseSensitivity</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-skip">testCaseSensitivity</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -498,18 +432,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -517,25 +443,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="10"
+        <li class="test-item"  status="skip" test-id="10"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testErrorMessageConsistency</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:003</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testErrorMessageConsistency</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:003</span>
+<h5 class="test-status text-skip">testErrorMessageConsistency</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -547,18 +473,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -566,25 +484,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="11"
+        <li class="test-item"  status="skip" test-id="11"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testExpiredPasswordLogin</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:003</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testExpiredPasswordLogin</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:003</span>
+<h5 class="test-status text-skip">testExpiredPasswordLogin</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -596,18 +514,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -615,25 +525,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="12"
+        <li class="test-item"  status="skip" test-id="12"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testPasswordVisibilityToggle</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:004</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testPasswordVisibilityToggle</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-skip">testPasswordVisibilityToggle</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -645,18 +555,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -664,25 +566,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="13"
+        <li class="test-item"  status="skip" test-id="13"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testForgotPasswordLink</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:004</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:002</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testForgotPasswordLink</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-skip">testForgotPasswordLink</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -694,18 +596,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -713,25 +607,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="14"
+        <li class="test-item"  status="skip" test-id="14"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testPasswordResetWithRegisteredEmail</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:005</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testPasswordResetWithRegisteredEmail</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:005</span>
+<h5 class="test-status text-skip">testPasswordResetWithRegisteredEmail</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -743,18 +637,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -762,25 +648,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="15"
+        <li class="test-item"  status="skip" test-id="15"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testPasswordResetWithUnregisteredEmail</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:003</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testPasswordResetWithUnregisteredEmail</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:003</span>
+<h5 class="test-status text-skip">testPasswordResetWithUnregisteredEmail</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -792,18 +678,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -811,25 +689,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="16"
+        <li class="test-item"  status="skip" test-id="16"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testPasswordResetEmailFormat</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:004</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testPasswordResetEmailFormat</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-skip">testPasswordResetEmailFormat</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -841,18 +719,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -860,25 +730,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="17"
+        <li class="test-item"  status="skip" test-id="17"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testResetPassword</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:003</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testResetPassword</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:003</span>
+<h5 class="test-status text-skip">testResetPassword</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -890,18 +760,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error {
-  message='Target page, context or browser has been closed
-  name='TargetClosedError
-  stack='TargetClosedError: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\server\dispatchers\dispatcher.js:273:44)
-    at transport.onmessage (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-15264625675449340401\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:491:21)
-}
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -909,25 +771,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="18"
+        <li class="test-item"  status="skip" test-id="18"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testSignUpLink</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:002</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testSignUpLink</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:002</span>
+<h5 class="test-status text-skip">testSignUpLink</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -939,10 +801,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: User should be redirected to the Sign-Up page. expected [true] but found [false]
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -950,24 +812,24 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="19"
+        <li class="test-item"  status="skip" test-id="19"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testValidGoogleRegistration</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:001</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testValidGoogleRegistration</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
+<h5 class="test-status text-skip">testValidGoogleRegistration</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
 <span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -980,10 +842,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: User should be able to register and log in successfully with Google. expected [true] but found [false]
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -991,25 +853,25 @@ Call log:
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="20"
+        <li class="test-item"  status="skip" test-id="20"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testRegistrationWithExistingGoogleAccount</p>
             <p class="text-sm">
-              <span>4:07:59 pm</span> / <span>00:00:00:009</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:22:46 pm</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testRegistrationWithExistingGoogleAccount</h5>
-<span class='badge badge-success'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-danger'>01.31.2025 4:07:59 pm</span>
-<span class='badge badge-default'>00:00:00:009</span>
+<h5 class="test-status text-skip">testRegistrationWithExistingGoogleAccount</h5>
+<span class='badge badge-success'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-danger'>01.31.2025 6:22:46 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1021,10 +883,10 @@ Call log:
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>4:07:59 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:22:46 pm</td>
         <td>
-          Test failed with exception: Error message should be displayed for existing Google account. expected [true] but found [false]
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -1046,13 +908,13 @@ Call log:
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 31, 2025 04:07:24 pm</h3>
+<h3>Jan 31, 2025 06:22:46 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 31, 2025 04:07:59 pm</h3>
+<h3>Jan 31, 2025 06:22:46 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1064,7 +926,7 @@ Call log:
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>20</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -1085,8 +947,8 @@ Call log:
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>20</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>20</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -1105,8 +967,8 @@ Call log:
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>20</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>20</b> others
 </small>
 </div>
 </div>
@@ -1122,7 +984,7 @@ Call log:
 </div></div>
 <script>
 var timeline = {
-"testValidLogin":0.264,"testInvalidLogin":9.192,"testEmptyFieldsLogin":0.009,"testBlankUsernameWithValidPassword":0.005,"testBlankPasswordWithValidUsername":0.009,"testPasswordMasking":0.006,"testLoginWithRememberMe":0.004,"testLongUsernamePassword":0.004,"testCaseSensitivity":0.004,"testErrorMessageConsistency":0.003,"testExpiredPasswordLogin":0.003,"testPasswordVisibilityToggle":0.004,"testForgotPasswordLink":0.004,"testPasswordResetWithRegisteredEmail":0.005,"testPasswordResetWithUnregisteredEmail":0.003,"testPasswordResetEmailFormat":0.004,"testResetPassword":0.003,"testSignUpLink":0.002,"testValidGoogleRegistration":0.001,"testRegistrationWithExistingGoogleAccount":0.009
+"testValidLogin":0.01,"testInvalidLogin":0.003,"testEmptyFieldsLogin":0.001,"testBlankUsernameWithValidPassword":0.001,"testBlankPasswordWithValidUsername":0.002,"testPasswordMasking":0.002,"testLoginWithRememberMe":0.001,"testLongUsernamePassword":0.001,"testCaseSensitivity":0.001,"testErrorMessageConsistency":0.002,"testExpiredPasswordLogin":0.002,"testPasswordVisibilityToggle":0.001,"testForgotPasswordLink":0.002,"testPasswordResetWithRegisteredEmail":0,"testPasswordResetWithUnregisteredEmail":0.001,"testPasswordResetEmailFormat":0.001,"testResetPassword":0.001,"testSignUpLink":0.001,"testValidGoogleRegistration":0.001,"testRegistrationWithExistingGoogleAccount":0.001
 };
 </script>
 <div class="row">
@@ -1132,9 +994,9 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 20,
+failParent: 0,
 warningParent: 0,
-skipParent: 0,
+skipParent: 20,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1149,9 +1011,9 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 20,
+failEvents: 0,
 warningEvents: 0,
-skipEvents: 0,
+skipEvents: 20,
 infoEvents: 0
 };
 </script>        </div>

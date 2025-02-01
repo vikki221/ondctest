@@ -134,6 +134,11 @@ public class LoginPage {
 		return false;
 	}
 
+	public void clickRememberMe() {
+		// TODO Auto-generated method stub
+		
+	}
+
 
    
 }

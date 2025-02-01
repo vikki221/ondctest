@@ -1,29 +1,1116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="8" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T16:15:26 IST" name="Test Suite" finished-at="2025-01-31T16:16:19 IST" duration-ms="52344">
+  <suite started-at="2025-02-01T11:09:10 IST" name="Test Suite" finished-at="2025-02-01T11:11:35 IST" duration-ms="144879">
     <groups>
     </groups>
-    <test started-at="2025-01-31T16:15:26 IST" name="LoginTests" finished-at="2025-01-31T16:16:19 IST" duration-ms="52344">
-      <class name="testcases.ProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductTest@38c6f217]" started-at="2025-01-31T16:15:27 IST" name="setUp" finished-at="2025-01-31T16:15:43 IST" duration-ms="16279" status="PASS">
+    <test started-at="2025-02-01T11:09:10 IST" name="LoginTests" finished-at="2025-02-01T11:11:35 IST" duration-ms="144879">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:11 IST" name="setUp" finished-at="2025-02-01T11:09:28 IST" duration-ms="17535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:testcases.ProductTest@38c6f217]" started-at="2025-01-31T16:15:43 IST" name="initialize" finished-at="2025-01-31T16:15:43 IST" duration-ms="2" status="PASS">
+        <test-method signature="testValidLogin()[pri:1, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:28 IST" name="testValidLogin" finished-at="2025-02-01T11:09:28 IST" duration-ms="327" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login was unsuccessful or dashboard not visible! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login was unsuccessful or dashboard not visible! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testValidLogin(LoginTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="testLoginAndAddProduct()[pri:1, instance:testcases.ProductTest@38c6f217]" started-at="2025-01-31T16:15:43 IST" name="testLoginAndAddProduct" finished-at="2025-01-31T16:16:18 IST" duration-ms="35321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginAndAddProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ProductTest@38c6f217]" started-at="2025-01-31T16:16:18 IST" name="tearDown" finished-at="2025-01-31T16:16:19 IST" duration-ms="327" status="PASS">
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:28 IST" name="tearDown" finished-at="2025-02-01T11:09:29 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.ProductTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:29 IST" name="setUp" finished-at="2025-02-01T11:09:31 IST" duration-ms="2396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:31 IST" name="testInvalidLogin" finished-at="2025-02-01T11:09:31 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:31 IST" name="tearDown" finished-at="2025-02-01T11:09:32 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:32 IST" name="setUp" finished-at="2025-02-01T11:09:34 IST" duration-ms="2379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyFieldsLogin()[pri:3, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:34 IST" name="testEmptyFieldsLogin" finished-at="2025-02-01T11:09:34 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFieldsLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:34 IST" name="tearDown" finished-at="2025-02-01T11:09:35 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:35 IST" name="setUp" finished-at="2025-02-01T11:09:37 IST" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBlankUsernameWithValidPassword()[pri:4, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:37 IST" name="testBlankUsernameWithValidPassword" finished-at="2025-02-01T11:09:37 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlankUsernameWithValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:37 IST" name="tearDown" finished-at="2025-02-01T11:09:38 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:38 IST" name="setUp" finished-at="2025-02-01T11:09:40 IST" duration-ms="2285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBlankPasswordWithValidUsername()[pri:5, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:40 IST" name="testBlankPasswordWithValidUsername" finished-at="2025-02-01T11:09:40 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlankPasswordWithValidUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:40 IST" name="tearDown" finished-at="2025-02-01T11:09:41 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:41 IST" name="setUp" finished-at="2025-02-01T11:09:43 IST" duration-ms="2371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordMasking()[pri:6, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:43 IST" name="testPasswordMasking" finished-at="2025-02-01T11:09:43 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordMasking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:43 IST" name="tearDown" finished-at="2025-02-01T11:09:43 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:43 IST" name="setUp" finished-at="2025-02-01T11:09:46 IST" duration-ms="2306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithRememberMe()[pri:7, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:46 IST" name="testLoginWithRememberMe" finished-at="2025-02-01T11:09:46 IST" duration-ms="313" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login was unsuccessful or dashboard not visible! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login was unsuccessful or dashboard not visible! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testLoginWithRememberMe(LoginTest.java:98)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithRememberMe -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:46 IST" name="tearDown" finished-at="2025-02-01T11:09:46 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:46 IST" name="setUp" finished-at="2025-02-01T11:09:49 IST" duration-ms="2340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongUsernamePassword()[pri:8, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:49 IST" name="testLongUsernamePassword" finished-at="2025-02-01T11:09:49 IST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongUsernamePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:49 IST" name="tearDown" finished-at="2025-02-01T11:09:49 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:49 IST" name="setUp" finished-at="2025-02-01T11:09:52 IST" duration-ms="2314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCaseSensitivity()[pri:9, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:52 IST" name="testCaseSensitivity" finished-at="2025-02-01T11:09:52 IST" duration-ms="288" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login was unsuccessful due to case sensitivity issues. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login was unsuccessful due to case sensitivity issues. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testCaseSensitivity(LoginTest.java:126)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseSensitivity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:52 IST" name="tearDown" finished-at="2025-02-01T11:09:52 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:52 IST" name="setUp" finished-at="2025-02-01T11:09:55 IST" duration-ms="2313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testErrorMessageConsistency()[pri:10, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:55 IST" name="testErrorMessageConsistency" finished-at="2025-02-01T11:09:55 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testErrorMessageConsistency -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:55 IST" name="tearDown" finished-at="2025-02-01T11:09:55 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:55 IST" name="setUp" finished-at="2025-02-01T11:09:58 IST" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testExpiredPasswordLogin()[pri:11, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:58 IST" name="testExpiredPasswordLogin" finished-at="2025-02-01T11:09:58 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpiredPasswordLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:58 IST" name="tearDown" finished-at="2025-02-01T11:09:58 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:09:58 IST" name="setUp" finished-at="2025-02-01T11:10:00 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordVisibilityToggle()[pri:12, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:00 IST" name="testPasswordVisibilityToggle" finished-at="2025-02-01T11:10:01 IST" duration-ms="125" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Password should be visible after clicking the toggle. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Password should be visible after clicking the toggle. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testPasswordVisibilityToggle(LoginTest.java:152)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordVisibilityToggle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:01 IST" name="tearDown" finished-at="2025-02-01T11:10:01 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:01 IST" name="setUp" finished-at="2025-02-01T11:10:03 IST" duration-ms="2338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testForgotPasswordLink()[pri:13, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:03 IST" name="testForgotPasswordLink" finished-at="2025-02-01T11:10:32 IST" duration-ms="28684" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+at com.microsoft.playwright.Locator.click(Locator.java:2493)
+at pageobjects.LoginPage.clickForgotPassword(LoginPage.java:74)
+at testcases.LoginTest.testForgotPasswordLink(LoginTest.java:157)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotPasswordLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:32 IST" name="tearDown" finished-at="2025-02-01T11:10:32 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:32 IST" name="setUp" finished-at="2025-02-01T11:10:34 IST" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordResetWithRegisteredEmail()[pri:14, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:34 IST" name="testPasswordResetWithRegisteredEmail" finished-at="2025-02-01T11:10:52 IST" duration-ms="18022" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+at com.microsoft.playwright.Locator.click(Locator.java:2493)
+at pageobjects.LoginPage.clickForgotPassword(LoginPage.java:74)
+at testcases.LoginTest.testPasswordResetWithRegisteredEmail(LoginTest.java:165)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordResetWithRegisteredEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:52 IST" name="tearDown" finished-at="2025-02-01T11:10:53 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:53 IST" name="setUp" finished-at="2025-02-01T11:10:55 IST" duration-ms="2369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordResetWithUnregisteredEmail()[pri:15, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:10:55 IST" name="testPasswordResetWithUnregisteredEmail" finished-at="2025-02-01T11:11:04 IST" duration-ms="8726" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+at com.microsoft.playwright.Locator.click(Locator.java:2493)
+at pageobjects.LoginPage.clickForgotPassword(LoginPage.java:74)
+at testcases.LoginTest.testPasswordResetWithUnregisteredEmail(LoginTest.java:174)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordResetWithUnregisteredEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:04 IST" name="tearDown" finished-at="2025-02-01T11:11:04 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:04 IST" name="setUp" finished-at="2025-02-01T11:11:06 IST" duration-ms="2327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordResetEmailFormat()[pri:16, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:06 IST" name="testPasswordResetEmailFormat" finished-at="2025-02-01T11:11:13 IST" duration-ms="6664" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+at com.microsoft.playwright.Locator.click(Locator.java:2493)
+at pageobjects.LoginPage.clickForgotPassword(LoginPage.java:74)
+at testcases.LoginTest.testPasswordResetEmailFormat(LoginTest.java:183)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordResetEmailFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:13 IST" name="tearDown" finished-at="2025-02-01T11:11:13 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:13 IST" name="setUp" finished-at="2025-02-01T11:11:16 IST" duration-ms="2383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testResetPassword()[pri:17, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:16 IST" name="testResetPassword" finished-at="2025-02-01T11:11:22 IST" duration-ms="6009" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+at com.microsoft.playwright.Locator.click(Locator.java:2493)
+at pageobjects.LoginPage.clickForgotPassword(LoginPage.java:74)
+at testcases.LoginTest.testResetPassword(LoginTest.java:192)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:84:17)
+    at C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:43
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:81:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:931:40)
+    at async C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\VICKYS~1\AppData\Local\Temp\playwright-java-11516477288923236727\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-   - waiting for locator("//a[@class='text-sm font-medium text-emerald-500 dark:text-emerald-400 hover:underline']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:22 IST" name="tearDown" finished-at="2025-02-01T11:11:22 IST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:22 IST" name="setUp" finished-at="2025-02-01T11:11:25 IST" duration-ms="2584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignUpLink()[pri:18, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:25 IST" name="testSignUpLink" finished-at="2025-02-01T11:11:25 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User should be redirected to the Sign-Up page. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User should be redirected to the Sign-Up page. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testSignUpLink(LoginTest.java:207)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:25 IST" name="tearDown" finished-at="2025-02-01T11:11:25 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:25 IST" name="setUp" finished-at="2025-02-01T11:11:27 IST" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidGoogleRegistration()[pri:19, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:27 IST" name="testValidGoogleRegistration" finished-at="2025-02-01T11:11:27 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User should be able to register and log in successfully with Google. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User should be able to register and log in successfully with Google. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testValidGoogleRegistration(LoginTest.java:214)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidGoogleRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:27 IST" name="tearDown" finished-at="2025-02-01T11:11:28 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:28 IST" name="setUp" finished-at="2025-02-01T11:11:30 IST" duration-ms="2289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistrationWithExistingGoogleAccount()[pri:20, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:30 IST" name="testRegistrationWithExistingGoogleAccount" finished-at="2025-02-01T11:11:35 IST" duration-ms="5010" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message should be displayed for existing Google account. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message should be displayed for existing Google account. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcases.LoginTest.testRegistrationWithExistingGoogleAccount(LoginTest.java:221)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistrationWithExistingGoogleAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@4466af20]" started-at="2025-02-01T11:11:35 IST" name="tearDown" finished-at="2025-02-01T11:11:35 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
     </test> <!-- LoginTests -->
   </suite> <!-- Test Suite -->
 </testng-results>

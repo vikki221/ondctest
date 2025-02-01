@@ -1,54 +1,59 @@
 package testcases;
 
 import org.testng.Assert;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.microsoft.playwright.options.LoadState;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
 import pageobjects.LoginPage;
-import testbase.BaseClass;
 import utilities.ConfigReader;
-import listeners.CustomListener;
 
-@Listeners(CustomListener.class)
-public class LoginTest extends BaseClass {
-
+public class LoginTest {
+	
+	protected Playwright playwright;
+    protected Browser browser;
+    protected Page page;
+    protected LoginPage lp;
     private ConfigReader configReader;
-    private LoginPage lp;
-    private String username;
-    private String password;
+	
+	 @BeforeMethod
+	    public void setUp() {
+	        configReader = new ConfigReader();
+	        String url = configReader.getURL();
+	        playwright = Playwright.create();
+	        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+	        page = browser.newPage();
+	        page.navigate(url);
 
-    @BeforeClass
-    public void initialize() {
-        configReader = new ConfigReader();
-        username = configReader.getUsername();
-        password = configReader.getPassword();
-        lp = new LoginPage(page);
-    }
+	        lp = new LoginPage(page);
 
-    // TC_001: Verify valid login
+	    }
+
+
     @Test(priority = 1)
     public void testValidLogin() {
-        lp.enterUsername(username);
-        lp.enterPassword(password);
+        lp.enterUsername("admin");
+        lp.enterPassword("admin");
         lp.clickLogin();
 
         boolean isDashboardVisible = page.locator("xpath=//span[normalize-space()='Dashboard']").isVisible();
         Assert.assertTrue(isDashboardVisible, "Login was unsuccessful or dashboard not visible!");
     }
 
-    // TC_002: Verify login with invalid password
     @Test(priority = 2)
     public void testInvalidLogin() {
-        lp.enterUsername(username);
+        lp.enterUsername("admin");
         lp.enterPassword("invalidPassword");
         lp.clickLogin();
 
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message was not displayed for invalid login.");
     }
 
-    // TC_003: Verify login with empty fields
     @Test(priority = 3)
     public void testEmptyFieldsLogin() {
         lp.clearUsername();
@@ -58,57 +63,48 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message not displayed when both fields are empty.");
     }
 
-    // TC_004: Verify login with blank username and valid password
     @Test(priority = 4)
     public void testBlankUsernameWithValidPassword() {
         lp.clearUsername();
-        lp.enterPassword(password);
+        lp.enterPassword("admin");
         lp.clickLogin();
 
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message not displayed for blank username.");
     }
 
-    // TC_005: Verify login with blank password and valid username
     @Test(priority = 5)
     public void testBlankPasswordWithValidUsername() {
         lp.clearPassword();
-        lp.enterUsername(username);
+        lp.enterUsername("admin");
         lp.clickLogin();
 
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message not displayed for blank password.");
     }
 
-    // TC_006: Verify password masking
     @Test(priority = 6)
     public void testPasswordMasking() {
-        lp.enterPassword(password);
+        lp.enterPassword("admin");
         Assert.assertTrue(lp.isPasswordMasked(), "Password is not masked.");
     }
 
-    // TC_007: Verify login with Remember Me enabled
     @Test(priority = 7)
     public void testLoginWithRememberMe() {
-        lp.enterUsername(username);
-        lp.enterPassword(password);
-        lp.clickrm();
+        lp.enterUsername("admin");
+        lp.enterPassword("admin");
+        lp.clickRememberMe();
         lp.clickLogin();
 
-        page.waitForLoadState(LoadState.NETWORKIDLE);
         boolean isDashboardVisible = page.locator("xpath=//span[normalize-space()='Dashboard']").isVisible();
         Assert.assertTrue(isDashboardVisible, "Login was unsuccessful or dashboard not visible!");
 
         lp.clickProfile();
         lp.clickLogout();
-
-        page.waitForLoadState(LoadState.NETWORKIDLE);
+        
         lp.clickLogin();
-        page.waitForLoadState(LoadState.NETWORKIDLE);
-
         boolean isDashboardVisibleAfterReLogin = page.locator("xpath=//span[normalize-space()='Dashboard']").isVisible();
         Assert.assertTrue(isDashboardVisibleAfterReLogin, "Login was unsuccessful or dashboard not visible after re-login!");
     }
 
-    // TC_008: Verify login with long username and password
     @Test(priority = 8)
     public void testLongUsernamePassword() {
         String longUsername = "user" + "a".repeat(256);
@@ -121,19 +117,15 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message should be displayed for long username and password.");
     }
 
-    // TC_009: Verify case sensitivity of username
     @Test(priority = 9)
     public void testCaseSensitivity() {
-        String alteredUsername = username.toUpperCase();
-        lp.enterUsername(alteredUsername);
-        lp.enterPassword(password);
+        lp.enterPassword("admin");
         lp.clickLogin();
 
         boolean isDashboardVisible = page.locator("xpath=//span[normalize-space()='Dashboard']").isVisible();
         Assert.assertTrue(isDashboardVisible, "Login was unsuccessful due to case sensitivity issues.");
     }
 
-    // TC_010: Verify error message consistency
     @Test(priority = 10)
     public void testErrorMessageConsistency() {
         lp.enterUsername("incorrectUsername");
@@ -143,26 +135,23 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message should be consistent across invalid login attempts.");
     }
 
-    // TC_011: Verify login with expired password
     @Test(priority = 11)
     public void testExpiredPasswordLogin() {
-        lp.enterUsername(username);
+        lp.enterUsername("admin");
         lp.enterPassword("expiredPassword");
         lp.clickLogin();
 
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "User should be prompted to reset their password for expired password.");
     }
 
-    // TC_012: Verify password visibility toggle
     @Test(priority = 12)
     public void testPasswordVisibilityToggle() {
-        lp.enterPassword(password);
+        lp.enterPassword("admin");
         lp.clickPasswordVisibilityToggle();
 
         Assert.assertTrue(lp.isPasswordVisible(), "Password should be visible after clicking the toggle.");
     }
 
-    // TC_013: Verify Forgot Password link is clickable
     @Test(priority = 13)
     public void testForgotPasswordLink() {
         lp.clickForgotPassword();
@@ -171,7 +160,6 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(currentUrl.contains("forgot-password"), "User was not redirected to Forgot Password page.");
     }
 
-    // TC_014: Verify password reset with registered email
     @Test(priority = 14)
     public void testPasswordResetWithRegisteredEmail() {
         lp.clickForgotPassword();
@@ -181,7 +169,6 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isResetEmailSent(), "Password reset email should be sent.");
     }
 
-    // TC_015: Verify password reset with unregistered email
     @Test(priority = 15)
     public void testPasswordResetWithUnregisteredEmail() {
         lp.clickForgotPassword();
@@ -191,7 +178,6 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message should be displayed for unregistered email.");
     }
 
-    // TC_016: Verify password reset email format
     @Test(priority = 16)
     public void testPasswordResetEmailFormat() {
         lp.clickForgotPassword();
@@ -201,7 +187,6 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isResetEmailFormatValid(), "Password reset email should contain a secure link.");
     }
 
-    // TC_017: Verify user can set a new password
     @Test(priority = 17)
     public void testResetPassword() {
         lp.clickForgotPassword();
@@ -214,7 +199,6 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isPasswordUpdated(), "User should be able to log in with the new password.");
     }
 
-    // TC_018: Verify Sign-Up link is clickable
     @Test(priority = 18)
     public void testSignUpLink() {
         lp.clickSignUp();
@@ -222,7 +206,7 @@ public class LoginTest extends BaseClass {
         String currentUrl = page.url();
         Assert.assertTrue(currentUrl.contains("sign-up"), "User should be redirected to the Sign-Up page.");
     }
- // TC_019: Verify registration with Google login
+
     @Test(priority = 19)
     public void testValidGoogleRegistration() {
         lp.clickGoogleSignUp();
@@ -230,7 +214,6 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isRegistrationSuccessful(), "User should be able to register and log in successfully with Google.");
     }
 
-    // TC_020: Verify registration with an existing Google account
     @Test(priority = 20)
     public void testRegistrationWithExistingGoogleAccount() {
         lp.clickGoogleSignUp();
@@ -238,5 +221,11 @@ public class LoginTest extends BaseClass {
         Assert.assertTrue(lp.isErrorMessageDisplayed(), "Error message should be displayed for existing Google account.");
     }
 
- 
+
+    @AfterMethod
+    public void tearDown() {
+        if (browser != null) {
+            browser.close();
+        }
+    }
 }
