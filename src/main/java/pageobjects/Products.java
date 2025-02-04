@@ -173,4 +173,14 @@ public class Products {
         page.locator(submit).click();;
     }
 
+	public void clickNextField() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void enterDimensions(String string, String string2, String string3) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

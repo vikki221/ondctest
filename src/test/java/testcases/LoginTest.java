@@ -36,11 +36,11 @@ public class LoginTest {
 
 
     @Test(priority = 1)
-    public void testValidLogin() {
+    public void testValidLogin() throws InterruptedException {
         lp.enterUsername("admin");
         lp.enterPassword("admin");
         lp.clickLogin();
-
+        Thread.sleep(4000);
         boolean isDashboardVisible = page.locator("xpath=//span[normalize-space()='Dashboard']").isVisible();
         Assert.assertTrue(isDashboardVisible, "Login was unsuccessful or dashboard not visible!");
     }

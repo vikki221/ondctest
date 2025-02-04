@@ -6,24 +6,64 @@
   </listeners>
   <test thread-count="5" name="LoginTests(failed)">
     <classes>
-      <class name="testcases.LoginTest">
+      <class name="testcases.ProductTest">
         <methods>
-          <include name="testPasswordVisibilityToggle"/>
-          <include name="testPasswordResetEmailFormat"/>
-          <include name="setUp"/>
-          <include name="testPasswordResetWithRegisteredEmail"/>
-          <include name="testValidGoogleRegistration"/>
-          <include name="testRegistrationWithExistingGoogleAccount"/>
-          <include name="testForgotPasswordLink"/>
-          <include name="testValidLogin"/>
-          <include name="testPasswordResetWithUnregisteredEmail"/>
+          <include name="testInvalidProductPrice"/>
+          <include name="testProductTags"/>
+          <include name="testWeightUnitDropdown"/>
           <include name="tearDown"/>
-          <include name="testCaseSensitivity"/>
-          <include name="testLoginWithRememberMe"/>
-          <include name="testSignUpLink"/>
-          <include name="testResetPassword"/>
+          <include name="testValidProductPrice"/>
+          <include name="testProductListPagination"/>
+          <include name="testSuccessMessageAfterSubmission"/>
+          <include name="testValidWeight"/>
+          <include name="testInvalidProductTags"/>
+          <include name="testUnitOfMeasurementRequired"/>
+          <include name="testValidProductNameEntry"/>
+          <include name="testManufacturerName"/>
+          <include name="testSalePriceExceedsProductPrice"/>
+          <include name="testEmptyDimensionFields"/>
+          <include name="testAdditiveInformation"/>
+          <include name="testInPlaceEditingOfProductPrice"/>
+          <include name="testProductListLoadsCorrectly"/>
+          <include name="testReturnableField"/>
+          <include name="testCancellableField"/>
+          <include name="testProductSearch"/>
+          <include name="testShipmentBufferWindow"/>
+          <include name="testValidProductEntry"/>
+          <include name="testManufactureYearFormat"/>
+          <include name="testWeightFieldValidation"/>
+          <include name="setUp"/>
+          <include name="pp"/>
+          <include name="testProductNameNotEmpty"/>
+          <include name="testLongNutritionInformation"/>
+          <include name="testInvalidBarcode"/>
+          <include name="testNegativeQuantity1"/>
+          <include name="testManufactureYear"/>
+          <include name="testDimensionDetails"/>
+          <include name="testGSTPercentWithDecimals"/>
+          <include name="testLongProductDescription"/>
+          <include name="testValidProductDescription"/>
+          <include name="testFieldsClearedAfterSubmission"/>
+          <include name="testValidQuantity"/>
+          <include name="testInvalidBarcodeEntry"/>
+          <include name="testNonIntegerShipmentBufferWindow"/>
+          <include name="testProductTagsWithSpaces"/>
+          <include name="testSalePriceNotExceedProductPrice"/>
+          <include name="testSalePriceGreaterThanProductPrice"/>
+          <include name="testInvalidProductNameEntry"/>
+          <include name="testDeleteProduct"/>
+          <include name="testUnitOfMeasurementDropdown"/>
+          <include name="testValidGSTPercent"/>
+          <include name="testValidBarcodeEntry"/>
+          <include name="testGSTPercentCannotExceed100"/>
+          <include name="testNegativeQuantity"/>
+          <include name="testNumericManufacturerName"/>
+          <include name="testReturnableFieldDefault"/>
+          <include name="testInvalidGSTPercent"/>
+          <include name="testSortByProductName"/>
+          <include name="testPriceWithinRange"/>
         </methods>
-      </class> <!-- testcases.LoginTest -->
+      </class> <!-- testcases.ProductTest -->
     </classes>
   </test> <!-- LoginTests(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->
