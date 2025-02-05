@@ -1,6 +1,7 @@
 package testcases;
 
 import pageobjects.Products;
+
 import testbase.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -495,6 +496,7 @@ public class ProductTest extends BaseClass {
     }
 
     @Test(priority = 51)
+    
     public void testSalePriceNotExceedProductPrice() {
         pr.enterProductPrice("100");
         pr.enterSalePrice("150");
